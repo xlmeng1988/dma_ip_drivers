@@ -10,7 +10,10 @@ tool_path=../tools
 # variable. Addresses in the range of 0 - (4 * transferSize) will  
 # be used for this test when the PCIe DMA core is setup for memory
 # mapped transaction.
-transferSize=1024
+# transferSize=1024
+# transferSize=$((4*1024))
+transferSize=$((1*1024*1024))
+#transferSize=$((32*1024*1024))
 # Set the number of times each data transfer will be repeated.
 # Increasing this number will allow transfers to accross multiple
 # channels to over lap for a longer period of time.
